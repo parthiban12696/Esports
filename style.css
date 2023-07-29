@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+#navbar{
+    position: fixed;
+    right:0;
+    top:0;
+    left:0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 10px 10px 30px rgba(0,0,0,.10);
+    background: black;
+}
+
+
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color:#850bb6 !important;    
+}
+.navbar-brand a:hover{
+  background-color: #b60b0b !important;
+}
+#navbarSupportedContent a{
+    color:#fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #850bb6;
+}
+#navbarSupportedContent button{
+    background: #850bb6;
+    width:5rem;
+    border-radius: 15px;
+
+}
+#navbarSupportedContent button a:hover{
+ background-color:#b60b0b;
+}
+h1{
+    width: 100%;
+    min-height: 100vh ; 
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
+/***nav ends***/
+.hero {
+    --color-default: #ffffff;
+    --color-default-rgb: 255, 255, 255;
+    --color-background:white;
+    --color-background-rgb: 0, 0, 0;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 160px 0 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #myVideo {
+    position: absolute;
+    right: fixed;
+    object-fit: cover;
+    left:100;
+    bottom: 0;
+    z-index: -1;
+    width: 100%; 
+    height: 100%;
+  
+  }
+  @media ( max-aspect-ratio: 16/9){
+  #myvideo{
+      width:auto;
+      height: 100%;
+  }
+  }
+  @media ( max-aspect-ratio: 16/9){
+  #myvideo{
+      width:auto;
+      height: 100%;
+  }
+  }
+  
+  .hero:before {
+    content: "";
+    background: rgba(var(--color-background-rgb), 0.5);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .hero h2 {
+    color:#fff;
+    margin: 0;
+    font-size: 44px;
+    font-weight: 700;
+  }
+  
+  .hero p {
+    color: white;
+    margin: 5px 0 0 0;
+    font-size: 20px;
+  }
+  
+  .hero .sign-up-form {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    background: var(--color-box-background);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero .sign-up-form .form-control {
+    border: none;
+  }
+  
+  .hero .sign-up-form .form-control:active,
+  .hero .sign-up-form .form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .hero .sign-up-form input[type=submit] {
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    padding: 8px 20px 10px 20px;
+    border-radius: 7px;
+    color: var(--color-inverse);
+  }
+  
+  .hero .sign-up-form input[type=submit]:hover {
+    background-color: #850bb6;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 32px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+  }
+#home {
+    background-image: linear-gradient(rgba(0,0,0,.3)),(rgba(0,0,0,.4)),url('../../TEAM 4 EDGE/bg.ifef.jpeg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h2{
+    font-size: 100px;
+    color:black;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px,1px 5px gray;
+                            
+}
+/****About****/
+#about{
+    background: linear-gradient(to right,rgb(88, 2, 88),rgb(98, 0, 128) 100%);
+    
+}
+#about img{
+    box-shadow: 1px;
+}
+#about h3{
+    font-weight: 800;
+    font-size: 50px;
+    color:white;
+
+
+}
+#about p{
+    color:white;
+}
+#about img{
+  border-radius: 0px;
+}
+#section {
+  background-image: url('/css/images/t4esports.png');
+  background-repeat: no-repeat;
+
+}
+#Members{
+    background:white;
+}
+#Membersh1{
+    font-size:50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#Members img{
+    width: 100;
+    height: 100;
+}
+#btn signin{
+  color:#850bb6;
+}
+.card{
+    width: 250px;
+    height: 350px;
+    border:none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px  4px 10px white;
+    border-radius: 20px !important; 
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;           
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                 inset -4px -4px 10px white;
+    transition: .2s;
+
+}
+
+/*****Contact******/
+#contact img{
+  position: absolute;
+  width:auto;
+  object-fit: cover;
+  align-items: left;
+
+}
+.form{
+  display:flex;
+  flex-direction: column;
+}
+#contact input{
+  margin: 10px 0 px;
+
+
+}
+#contact textarea{
+  margin: 10px 0 px;
+}
+#Contact button{
+  background-color: #850bb6;
+  color:#fff;
+  
+}
+
+
+footer{
+  width:100%;
+  height: 30px;
+  background: #850bb6;
+  margin-top: 100px;
+  text-align: center;
+  color:black;
+  padding:3px;
+
+}
